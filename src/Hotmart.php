@@ -7,7 +7,6 @@ use Wesleydeveloper\Hotmart\Support\HotConnect;
 
 /**
  * Class Hotmart
- * @package Wesleydeveloper\Hotmart
  */
 class Hotmart extends HotConnect
 {

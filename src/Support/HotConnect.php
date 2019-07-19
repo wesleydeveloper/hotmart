@@ -10,7 +10,6 @@ use InvalidArgumentException;
 
 /**
  * Class HotConnect
- * @package Wesleydeveloper\Hotmart\Support
  */
 class HotConnect
 {
@@ -25,7 +24,8 @@ class HotConnect
 
     //PROTECTED METHODS
 
-    protected function getAccessToken(){
+    protected function getAccessToken()
+    {
         return $this->config['tokens']['access_token']['headers'];
     }
 
@@ -41,7 +41,7 @@ class HotConnect
         try {
             $request = $client->post('/security/oauth/token', $params);
             $response = json_decode($request->getBody()->getContents(), true);
-            $this->config['tokens']['access_token']['headers'] = ['Authorization' => 'Bearer ' . $response['access_token']];
+            $this->config['tokens']['access_token']['headers'] = ['Authorization' => 'Bearer '.$response['access_token']];
         } catch (\Exception $e) {
             return $e;
         }
@@ -56,7 +56,7 @@ class HotConnect
         $params = ['grant_type' => 'client_credentials'];
 
         foreach ($keys as $key) {
-            if (!array_key_exists($key, $config)) {
+            if (! array_key_exists($key, $config)) {
                 throw new InvalidArgumentException("Missing configuration key [$key].");
             } else {
                 $params[$key] = $config[$key];
@@ -70,10 +70,10 @@ class HotConnect
     private function getBasicToken()
     {
         $config = $this->getConfigFile();
-        if(!array_key_exists('basic_token', $config)){
+        if(! array_key_exists('basic_token', $config)){
             throw new InvalidArgumentException("Missing configuration key basic_token.");
         }
-        $this->config['tokens']['basic_token']['headers'] = ['Authorization' => 'Basic ' . $config['basic_token']];
+        $this->config['tokens']['basic_token']['headers'] = ['Authorization' => 'Basic '.$config['basic_token']];
         return $this->config['tokens']['basic_token']['headers'];
     }
 
