@@ -2,7 +2,7 @@
     "name": "wesleydeveloper/hotmart",
     "description": "Hotmart Package Laravel Unofficial",
     "license": "MIT",
-    "version": "0.0.3-dev",
+    "version": "0.1.3-dev",
     "type": "library",
     "authors": [
         {
