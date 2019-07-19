@@ -48,7 +48,6 @@ class HotmartServiceProvider extends ServiceProvider
     {
         return ['hotmart'];
     }
-    
     /**
      * Console-specific booting.
      *

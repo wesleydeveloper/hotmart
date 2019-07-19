@@ -10,12 +10,12 @@ use Wesleydeveloper\Hotmart\Support\HotConnect;
  */
 class Hotmart extends HotConnect
 {
-
     private const BASE_URI = 'https://api-hot-connect.hotmart.com/';
 
     private $client;
 
     private $params;
+
     public function __construct()
     {
         parent::__construct();
@@ -27,6 +27,7 @@ class Hotmart extends HotConnect
     {
         $request = $this->client->get('/reports/rest/v2/history', $this->params);
         $response = json_decode($request->getBody()->getContents(), true);
+
         return $response;
     }
 
@@ -34,7 +35,7 @@ class Hotmart extends HotConnect
     {
         $request = $this->client->get('/reports/rest/v2/history', $this->params);
         $response = json_decode($request->getBody()->getContents(), true);
+
         return $response;
     }
-
 }

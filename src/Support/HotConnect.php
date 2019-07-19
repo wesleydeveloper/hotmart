@@ -9,7 +9,7 @@ use GuzzleHttp\Client;
 use InvalidArgumentException;
 
 /**
- * Class HotConnect
+ * Class HotConnect.
  */
 class HotConnect
 {
@@ -29,8 +29,6 @@ class HotConnect
         return $this->config['tokens']['access_token']['headers'];
     }
 
-
-
     //PRIVATE METHODS
     private function getClient()
     {
@@ -45,7 +43,6 @@ class HotConnect
         } catch (\Exception $e) {
             return $e;
         }
-
     }
 
     private function getParams(): array
@@ -70,10 +67,11 @@ class HotConnect
     private function getBasicToken()
     {
         $config = $this->getConfigFile();
-        if(! array_key_exists('basic_token', $config)){
-            throw new InvalidArgumentException("Missing configuration key basic_token.");
+        if(! array_key_exists('basic_token', $config)) {
+            throw new InvalidArgumentException('Missing configuration key basic_token.');
         }
         $this->config['tokens']['basic_token']['headers'] = ['Authorization' => 'Basic '.$config['basic_token']];
+
         return $this->config['tokens']['basic_token']['headers'];
     }
 
@@ -81,5 +79,4 @@ class HotConnect
     {
         return config('hotmart');
     }
-
 }
