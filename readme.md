@@ -14,6 +14,14 @@ Via Composer
 ``` bash
 $ composer require wesleydeveloper/hotmart
 ```
+Via Git
+
+```bash
+my-project-path/vendor$ mkdir wesleydeveloper
+my-project-path/vendor$ cd wesleydeveloper
+my-project-path/vendor/wesleydeveloper$ git clone https://github.com/wesleydeveloper/hotmart.git
+```
+
 Add the service provider to config/app.php in the providers array, or if you're using Laravel 5.5, this can be done via the automatic package discovery.
 ```php
 Wesleydeveloper\Hotmart\HotmartServiceProvider::class
