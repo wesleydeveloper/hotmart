@@ -75,7 +75,7 @@ If you discover any security related issues, please email author email instead o
 
 ## License
 
-license. Please see the [license file](license.md) for more information.
+MIT. Please see the [license file](license.md) for more information.
 
 [ico-version]: https://img.shields.io/packagist/v/wesleydeveloper/hotmart.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/wesleydeveloper/hotmart.svg?style=flat-square
