@@ -22,7 +22,7 @@ If you want you can use the facade. Add the reference in config/app.php to your 
 ```php
 'Hotmart' => Wesleydeveloper\Hotmart\Facades\Hotmart::class
 ```
-##Configuration
+## Configuration
 Laravel Hotmart requires connection configuration. To get started, you'll need to publish all vendor assets:
 ```bash
 $ php artisan vendor:publish --provider="Wesleydeveloper\Hotmart\HotmartServiceProvider"
