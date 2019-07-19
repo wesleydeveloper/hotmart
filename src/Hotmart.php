@@ -35,15 +35,13 @@ class Hotmart extends HotConnect
     public function getHistory(array $params)
     {
         $keys = ['startDate', 'endDate'];
-        if (is_array($params)) {
-            $params = array_filter($params);
-            foreach ($keys as $key) {
-                if (! array_key_exists($key, $params)) {
-                    throw new InvalidArgumentException("Missing configuration key [$key].");
-                }
+        $params = array_filter($params);
+        foreach ($keys as $key) {
+            if (! array_key_exists($key, $params)) {
+                throw new InvalidArgumentException("Missing configuration key [$key].");
             }
-            $this->params['query'] = $params;
         }
+        $this->params['query'] = $params;
         $request = $this->client->get('/reports/rest/v2/history', $this->params);
         $response = json_decode($request->getBody()->getContents(), true);
 
@@ -59,16 +57,14 @@ class Hotmart extends HotConnect
     public function getPurchaseDetails(array $params)
     {
         $keys = ['startDate', 'endDate', 'transactionStatus'];
-        if (is_array($params)) {
-            $params = array_filter($params);
-            foreach ($keys as $key) {
-                if (! array_key_exists($key, $params)) {
-                    throw new InvalidArgumentException("Missing configuration key [$key].");
-                }
+        $params = array_filter($params);
+        foreach ($keys as $key) {
+            if (! array_key_exists($key, $params)) {
+                throw new InvalidArgumentException("Missing configuration key [$key].");
             }
-            $this->params['query'] = $params;
         }
-        $request = $this->client->fget('/reports/rest/v2/purchaseDetails', $this->params);
+        $this->params['query'] = $params;
+        $request = $this->client->get('/reports/rest/v2/purchaseDetails', $this->params);
         $response = json_decode($request->getBody()->getContents(), true);
 
         return $response;
@@ -122,10 +118,8 @@ class Hotmart extends HotConnect
      */
     public function getSubscription(array $params = null)
     {
-        if (is_array($params)) {
-            $params = array_filter($params);
-            $this->params['query'] = $params;
-        }
+        $params = array_filter($params);
+        $this->params['query'] = $params;
         $request = $this->client->get('/subscriber/rest/v2', $this->params);
         $response = json_decode($request->getBody()->getContents(), true);
 
@@ -141,10 +135,8 @@ class Hotmart extends HotConnect
      */
     public function getUser(array $params = null)
     {
-        if (is_array($params)) {
-            $params = array_filter($params);
-            $this->params['query'] = $params;
-        }
+        $params = array_filter($params);
+        $this->params['query'] = $params;
         $request = $this->client->get('/user/rest/v2', $this->params);
         $response = json_decode($request->getBody()->getContents(), true);
 
