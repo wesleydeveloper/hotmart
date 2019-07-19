@@ -11,9 +11,6 @@ use Wesleydeveloper\Hotmart\Support\HotConnect;
  */
 class Hotmart extends HotConnect
 {
-    /**
-     *
-     */
     private const BASE_URI = 'https://api-hot-connect.hotmart.com/';
 
     private $client;
@@ -41,7 +38,7 @@ class Hotmart extends HotConnect
         if (is_array($params)) {
             $params = array_filter($params);
             foreach ($keys as $key) {
-                if (!array_key_exists($key, $params)) {
+                if (! array_key_exists($key, $params)) {
                     throw new InvalidArgumentException("Missing configuration key [$key].");
                 }
             }
@@ -65,7 +62,7 @@ class Hotmart extends HotConnect
         if (is_array($params)) {
             $params = array_filter($params);
             foreach ($keys as $key) {
-                if (!array_key_exists($key, $params)) {
+                if (! array_key_exists($key, $params)) {
                     throw new InvalidArgumentException("Missing configuration key [$key].");
                 }
             }
@@ -75,7 +72,6 @@ class Hotmart extends HotConnect
         $response = json_decode($request->getBody()->getContents(), true);
 
         return $response;
-
     }
 
     // Affiliation
@@ -120,7 +116,7 @@ class Hotmart extends HotConnect
     // Subscription
 
     /**
-     * Optional parameters: page and rows
+     * Optional parameters: page and rows.
      * @param array|null $params
      * @return mixed
      */
@@ -139,7 +135,7 @@ class Hotmart extends HotConnect
     // User
 
     /**
-     * Optional parameters: id and ucode
+     * Optional parameters: id and ucode.
      * @param array|null $params
      * @return mixed
      */
