@@ -34,7 +34,7 @@ HOTMART_SECRET=
 HOTMART_BASIC=
 ```
 ## Usage
-###Hotmart
+### Hotmart
 This is the class where you have to focus. It is connected to the API connection class, Support\HotConnect.
 #### Examples
 ```php
