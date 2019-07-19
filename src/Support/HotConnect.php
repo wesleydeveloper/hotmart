@@ -67,7 +67,7 @@ class HotConnect
     private function getBasicToken()
     {
         $config = $this->getConfigFile();
-        if(! array_key_exists('basic_token', $config)) {
+        if (! array_key_exists('basic_token', $config)) {
             throw new InvalidArgumentException('Missing configuration key basic_token.');
         }
         $this->config['tokens']['basic_token']['headers'] = ['Authorization' => 'Basic '.$config['basic_token']];

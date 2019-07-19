@@ -6,7 +6,7 @@ use GuzzleHttp\Client;
 use Wesleydeveloper\Hotmart\Support\HotConnect;
 
 /**
- * Class Hotmart
+ * Class Hotmart.
  */
 class Hotmart extends HotConnect
 {
