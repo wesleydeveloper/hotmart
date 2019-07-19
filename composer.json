@@ -13,12 +13,6 @@
     ],
     "homepage": "https://github.com/wesleydeveloper/hotmart",
     "keywords": ["laravel", "hotmart"],
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/wesleydeveloper/hotmart"
-        }
-    ],
     "require": {
         "illuminate/support": "~5",
         "guzzlehttp/guzzle": "~6.0"
