@@ -4,6 +4,11 @@
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Build Status][ico-travis]][link-travis]
 [![StyleCI][ico-styleci]][link-styleci]
+###### Scrutinizer
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/wesleydeveloper/hotmart/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/wesleydeveloper/hotmart/?branch=master)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/wesleydeveloper/hotmart/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
+[![Build Status](https://scrutinizer-ci.com/g/wesleydeveloper/hotmart/badges/build.png?b=master)](https://scrutinizer-ci.com/g/wesleydeveloper/hotmart/build-status/master)
+[![Code Coverage](https://scrutinizer-ci.com/g/wesleydeveloper/hotmart/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/wesleydeveloper/hotmart/?branch=master)
 
 Laravel package for connection to the Hotmart API. Take a look at [contributing.md](contributing.md) to see a to do list.
 

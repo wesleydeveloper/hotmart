@@ -118,8 +118,10 @@ class Hotmart extends HotConnect
      */
     public function getSubscription(array $params = null)
     {
-        $params = array_filter($params);
-        $this->params['query'] = $params;
+        if (is_array($params)) {
+            $params = array_filter($params);
+            $this->params['query'] = $params;
+        }
         $request = $this->client->get('/subscriber/rest/v2', $this->params);
         $response = json_decode($request->getBody()->getContents(), true);
 
@@ -135,8 +137,10 @@ class Hotmart extends HotConnect
      */
     public function getUser(array $params = null)
     {
-        $params = array_filter($params);
-        $this->params['query'] = $params;
+        if (is_array($params)) {
+            $params = array_filter($params);
+            $this->params['query'] = $params;
+        }
         $request = $this->client->get('/user/rest/v2', $this->params);
         $response = json_decode($request->getBody()->getContents(), true);
 
