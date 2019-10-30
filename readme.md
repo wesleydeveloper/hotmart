@@ -82,11 +82,9 @@ MIT. Please see the [license file](license.md) for more information.
 [ico-version]: https://img.shields.io/packagist/v/wesleydeveloper/hotmart.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/wesleydeveloper/hotmart.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/wesleydeveloper/hotmart/master.svg?style=flat-square
-[ico-styleci]: https://styleci.io/repos/197770792/shield
 
 [link-packagist]: https://packagist.org/packages/wesleydeveloper/hotmart
 [link-downloads]: https://packagist.org/packages/wesleydeveloper/hotmart
 [link-travis]: https://travis-ci.org/wesleydeveloper/hotmart
-[link-styleci]: https://styleci.io/repos/197770792/
 [link-author]: https://github.com/wesleydeveloper
 [link-contributors]: ../../contributors
