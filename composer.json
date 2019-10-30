@@ -1,0 +1,35 @@
+{
+  "name": "wesleydeveloper/hotmart",
+  "description": "Hotmart SDK PHP Unofficial",
+  "version": "2.0.0",
+  "type": "library",
+  "require": {
+    "guzzlehttp/guzzle": "^6"
+  },
+  "require-dev": {
+    "maximebf/debugbar": "^1",
+    "phpunit/phpunit": "^8"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Wesley Silva",
+      "email": "wesley_silva@outlook.com",
+      "homepage": "https://wesleysilva.dev"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "classmap": [
+      "src/"
+    ],
+    "psr-4": {
+      "Wesleydeveloper\\Hotmart\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Wesleydeveloper\\Hotmart\\Tests\\": "tests"
+    }
+  }
+}
