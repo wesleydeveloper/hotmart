@@ -7,7 +7,6 @@
     "guzzlehttp/guzzle": "^6"
   },
   "require-dev": {
-    "maximebf/debugbar": "^1",
     "phpunit/phpunit": "^8"
   },
   "license": "MIT",

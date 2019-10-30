@@ -3,7 +3,6 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Build Status][ico-travis]][link-travis]
-[![StyleCI][ico-styleci]][link-styleci]
 ###### Scrutinizer
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/wesleydeveloper/hotmart/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/wesleydeveloper/hotmart/?branch=master)
 [![Code Intelligence Status](https://scrutinizer-ci.com/g/wesleydeveloper/hotmart/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
